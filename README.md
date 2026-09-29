@@ -40,3 +40,51 @@ Incident resolved
 Store resolution in Hindsight
         ↓
 Future incidents can reuse the experience
+## 🎬 Demo
+
+RecallOps demonstrates how persistent organizational memory improves
+production incident investigation.
+
+### 1. New Production Incident
+
+A new critical incident occurs in `payment-api`.
+
+![Current Incident](docs/screenshots/01-current-incident.png)
+
+### 2. Hindsight Recalls Previous Experience
+
+RecallOps retrieves a relevant historical incident from Hindsight.
+
+The agent connects the current incident to a previous `payment-api`
+incident with similar symptoms and a deployment-related failure.
+
+![Hindsight Memory](docs/screenshots/02-hindsight-memory.png)
+
+### 3. Recommendation and Learning
+
+Using the retrieved organizational memory, RecallOps recommends a
+resolution while keeping the engineer in control.
+
+After the engineer approves and resolves the incident, the outcome is
+stored in Hindsight so it can be used during future investigations.
+
+![Recommendation and Learning](docs/screenshots/03-recommendation-and-learning.png)
+
+### The Memory Loop
+
+```text
+New Incident
+     ↓
+Hindsight Recall
+     ↓
+Relevant Past Experience
+     ↓
+AI Recommendation
+     ↓
+Engineer Decision
+     ↓
+Resolution
+     ↓
+Hindsight Learns
+     ↓
+Better Future Investigations
